@@ -1,0 +1,15 @@
+/* Basic layout and simple styles - keep this small and readable */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background:#f9f9f9; }
+.container { padding: 20px; max-width: 1000px; margin: 0 auto; }
+.navbar { display:flex; align-items:center; justify-content:space-between; padding:10px 20px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+.nav-links { list-style:none; display:flex; gap:12px; margin:0; padding:0; }
+.nav-links a { text-decoration:none; color:#333; }
+.logo-link { display:flex; align-items:center; }
+.headshot { width:150px; border-radius:8px; display:block; margin-bottom:12px; }
+.projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:12px; }
+.project-card { padding:12px; border:1px solid #eee; border-radius:8px; text-align:center; background:#fff; }
+.education-table { width:100%; border-collapse:collapse; margin-top:12px; }
+.education-table th, .education-table td { border:1px solid #eee; padding:8px; text-align:left; }
+.contact-form label { display:block; margin-bottom:8px; }
+.contact-form input, .contact-form textarea { width:100%; padding:8px; margin-top:4px; box-sizing:border-box; border:1px solid #ddd; border-radius:4px; }
+.btn { display:inline-block; padding:8px 12px; background:#2E86AB; color:#fff; text-decoration:none; border-radius:6px; }
