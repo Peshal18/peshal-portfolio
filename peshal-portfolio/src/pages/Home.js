@@ -1,12 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
-export default function Home() {
+function Home() {
   return (
-    <div>
-      <h1>Welcome to my portfolio</h1>
-      <p className="lead">Mission: Build clean, useful web apps and learn every day.</p>
-      <Link to="/about" className="btn">About me</Link>
+    <div className="home">
+      <h1>Welcome to Peshal's Portfolio</h1>
+      <p>
+        Mission: To craft clean, efficient, and impactful web applications that solve real-world problems.
+      </p>
+      <div className="home-links">
+        <Link to="/about" className="home-link-btn">About Me</Link>
+        <Link to="/projects" className="home-link-btn">My Projects</Link>
+        <Link to="/contact" className="home-link-btn">Contact Me</Link>
+      </div>
     </div>
   );
 }
+
+export default Home;

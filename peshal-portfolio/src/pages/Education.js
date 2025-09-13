@@ -1,21 +1,22 @@
-import React from 'react';
+import React from "react";
+import "./Education.css";
 
-const educ = [
-  { year: '2025', degree: 'Diploma in Software Engineering Technician', institution: 'Your College Name' },
-];
-
-export default function Education() {
+function Education() {
   return (
-    <div>
-      <h1>Education</h1>
-      <table className="education-table">
-        <thead><tr><th>Year</th><th>Degree</th><th>Institution</th></tr></thead>
-        <tbody>
-          {educ.map((e, i) => (
-            <tr key={i}><td>{e.year}</td><td>{e.degree}</td><td>{e.institution}</td></tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <b>Bachelor of Science in Computer Science</b><br />
+          Centennial College, 2023-2025
+        </li>
+        <li>
+          <b>High School Diploma</b><br />
+          ABC High School, 2021
+        </li>
+      </ul>
     </div>
   );
 }
+
+export default Education;

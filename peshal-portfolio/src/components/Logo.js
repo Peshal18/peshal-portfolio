@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+import "./Logo.css";
 
-// Small SVG logo using your initials "PS" (change letters if you want)
-export default function Logo() {
+function Logo() {
   return (
-    <svg width="48" height="48" viewBox="0 0 100 100" aria-label="Logo">
-      <rect width="100" height="100" rx="16" fill="#2E86AB" />
-      <text x="50" y="60" fontSize="38" fontFamily="sans-serif" textAnchor="middle" fill="#fff">PS</text>
-    </svg>
+    <div className="logo">
+      {/* Simple hexagon with initials */}
+      <svg height="50" width="50" viewBox="0 0 100 100">
+        <polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="#0077cc" />
+        <text x="50%" y="55%" textAnchor="middle" fill="#fff" fontSize="32" fontFamily="Arial" dy=".3em">P</text>
+      </svg>
+      <span className="logo-text">Peshal Portfolio</span>
+    </div>
   );
 }
+
+export default Logo;

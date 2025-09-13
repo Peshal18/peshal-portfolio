@@ -1,18 +1,26 @@
-import React from 'react';
+import React from "react";
+import "./Services.css";
 
-const services = [
-  'Web development (React, HTML/CSS, JavaScript)',
-  'Programming help & tutoring',
-  'Small frontend projects',
-];
-
-export default function Services() {
+function Services() {
   return (
-    <div>
-      <h1>Services</h1>
-      <ul className="services-list">
-        {services.map((s, i) => <li key={i}>{s}</li>)}
-      </ul>
+    <div className="services">
+      <h2>Services I Offer</h2>
+      <div className="services-list">
+        <div className="service-card">
+          <h3>Web Development</h3>
+          <p>Building modern, responsive websites and web apps.</p>
+        </div>
+        <div className="service-card">
+          <h3>Mobile Apps</h3>
+          <p>Cross-platform mobile app development using React Native.</p>
+        </div>
+        <div className="service-card">
+          <h3>Consulting</h3>
+          <p>Tech consulting and project planning services.</p>
+        </div>
+      </div>
     </div>
   );
 }
+
+export default Services;

@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
+import "./About.css";
 
-// About page: replace the paragraph text with your real short bio
-export default function About() {
+function About() {
   return (
-    <div>
-      <h1>About Me</h1>
-      <img src="/images/me.jpg" alt="Headshot" className="headshot" />
+    <div className="about">
+      <h2>About Me</h2>
+      <img src="/images/me.jpg" alt="Peshal" className="about-img" />
       <p>
-        My name is Peshal Sitoula. I am a diploma student in Software Engineering Technician.
-        I enjoy coding and building small projects that solve problems.
+        <b>Peshal Sitoula</b>
+        <br />
+        I am a passionate web developer with a keen interest in creating dynamic and user-friendly web applications. I enjoy learning new technologies and building projects that make a difference!
       </p>
-      <a href="/resume.pdf" download>Download my Resume (PDF)</a>
+      <a href="/resume.pdf" download className="resume-link">Download My Resume (PDF)</a>
     </div>
   );
 }
+
+export default About;
